@@ -1,0 +1,240 @@
+/*background: url(../img/bg-3.jpg) no-repeat center center fixed;*/
+html {
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+
+}
+
+
+body { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);}
+.error-template {padding: 40px 15px;text-align: center;}
+.error-actions {margin-top:15px;margin-bottom:15px;}
+.error-actions .btn { margin-right:10px; }
+.container{
+}
+.content{
+
+}
+.bg-yenidogan {
+    color: #fff;
+    background-color: #e05206;
+}
+a.bg-yenidogan:hover,
+a.yenidogan:focus {
+    background-color: #286090;
+}
+
+/* layout.css Style */
+.upload-drop-zone {
+    height: 200px;
+    border-width: 2px;
+    margin-bottom: 20px;
+}
+
+/* skin.css Style*/
+.upload-drop-zone {
+    color: #ccc;
+    border-style: dashed;
+    border-color: #ccc;
+    line-height: 200px;
+    text-align: center
+}
+.upload-drop-zone.drop {
+    color: #222;
+    border-color: #222;
+}
+
+
+
+.image-preview-input {
+    position: relative;
+    overflow: hidden;
+    margin: 0px;
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+}
+.image-preview-input input[type=file] {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.image-preview-input-title {
+    margin-left:2px;
+}
+
+/*Modal Sonuç Başlangıç*/
+label.radio-inline, label.checkbox-inline {
+    background-color: #dcdfd4;
+    cursor: pointer;
+    font-weight: 400;
+    margin-bottom: 10px !important;
+    margin-right: 2%;
+    margin-left:0;
+    padding: 10px 10px 10px 30px;
+}
+label.radio-inline.checked, label.checkbox-inline.checked {
+    background-color: #266c8e;
+    color: #fff !important;
+    text-shadow: 1px 1px 2px #000 !important;
+}
+.checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline {
+    margin-left: 0;
+}
+.columns label.radio-inline, .columns label.checkbox-inline {
+    min-width: 190px;
+    vertical-align: top;
+    width: 30%;
+}
+.additional-info-wrap {
+    display: inline-block;
+    margin: 0 2% 0 0;
+    min-width: 190px;
+    position: relative;
+    vertical-align: top;
+    width: 30%;
+}
+.additional-info-wrap label.checkbox-inline, .additional-info-wrap label.radio-inline {
+    width: 100% !important;
+}
+.additional-info-wrap .additional-info {
+    background-color: #266c8e;
+    clear: both;
+    color: #fff !important;
+    margin-top: -10px;
+    padding: 0 10px 10px;
+    text-shadow: 1px 1px 2px #000 !important;
+    width: 100%;
+}
+
+
+.ui-sortable tr {
+    cursor:pointer;
+}
+.ui-sortable tr:hover {
+    background:rgba(244,251,17,0.45);
+}label.radio-inline,
+ label.checkbox-inline,
+ label.radio,
+ label.checkbox {
+     margin-right:2%;
+
+     font-weight:400;
+     padding:10px 10px 10px 30px;
+     background-color:#d9534f;
+
+     width: 100%;
+     color: #fff;
+ }
+label.checkbox a {
+    color: #fff;
+}
+
+label #item {
+    cursor:pointer;
+    background-color:#d9534f;
+    color: #fff;
+}
+
+label.radio-inline.checked,
+label.checkbox-inline.checked,
+label.radio.checked,
+label.checkbox.checked {
+    background-color:#266c8e;
+    color:#fff!important;
+    text-shadow:#000 1px 1px 2px!important
+}
+/*Modal Sonuç Bitiş*/
+
+/*Checkbox Sonlandırma Paneli Başlangıç*/
+.checkbox label:after,
+.radio label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.checkbox .cr,
+.radio .cr {
+    position: relative;
+    display: inline-block;
+    border: 1px solid #a9a9a9;
+    border-radius: .25em;
+    width: 1.3em;
+    height: 1.3em;
+    float: left;
+    margin-right: .5em;
+}
+
+.radio .cr {
+    border-radius: 50%;
+}
+
+.checkbox .cr .cr-icon,
+.radio .cr .cr-icon {
+    position: absolute;
+    font-size: .8em;
+    line-height: 0;
+    top: 50%;
+    left: 20%;
+}
+
+.radio .cr .cr-icon {
+    margin-left: 0.04em;
+}
+
+.checkbox label input[type="checkbox"],
+.radio label input[type="radio"] {
+    display: none;
+}
+
+.checkbox label input[type="checkbox"] + .cr > .cr-icon,
+.radio label input[type="radio"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    transition: all .3s ease-in;
+}
+
+.checkbox label input[type="checkbox"]:checked + .cr > .cr-icon,
+.radio label input[type="radio"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.checkbox label input[type="checkbox"]:disabled + .cr,
+.radio label input[type="radio"]:disabled + .cr {
+    opacity: .5;
+}
+/*Checkbox Sonlandırma Paneli Bitiş*/
+
+
+.iframe-container {
+    width: 100%;
+    height: auto;
+    padding-bottom: 60%;
+    padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.iframe-container iframe,
+.iframe-container object,
+.iframe-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Hasta Akış Bölümü*/
+.ul .hastabilgi li{
+    style="border: none;"
+}
