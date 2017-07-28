@@ -25,7 +25,7 @@ class PatientsRequest extends FormRequest
     {
         return [
             'baslama_tarih'=>'required',
-            'mernis_no'=>'required|max:11|min:11',
+            //'mernis_no'=>'required|max:11|min:11',
             'hasta_adi'=>'required',
             'uyruk'=>'required',
             'kategori'=>'required',
@@ -41,7 +41,7 @@ class PatientsRequest extends FormRequest
 
         return [
             'baslama_tarih.required'=>'Zorunlu Alan',
-            'mernis_no.required'=>'Zorunlu Alan',
+            //'mernis_no.required'=>'Zorunlu Alan',
             'mernis_no.max'=>'En Fazla 11 Karakter Girilebilir',
             'mernis_no.min'=>'En Az 11 Karakter Girilebilir',
             'hasta_adi.required'=>'Zorunlu Alan',

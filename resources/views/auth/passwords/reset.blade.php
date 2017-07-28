@@ -5,12 +5,8 @@
 
         <!-- Marketing Icons Section -->
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="page-header">
-                    Hayırlı Nöbetler Diliyorum
-                </h2>
-            </div>
-            <div class="col-md-8">
+
+            <div class="col-md-12">
                 <div class="panel panel-default">
                         <div class="panel-body">
                             @if (session('status'))
@@ -76,15 +72,7 @@
                         </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="panel panel-default">
-                    <div class="panel-body">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, optio corporis quae nulla aspernatur in alias at numquam rerum ea excepturi expedita tenetur assumenda voluptatibus eveniet incidunt dicta nostrum quod?</p>
-                        <a href="#" class="btn btn-default">Learn More</a>
-                    </div>
-                </div>
-            </div>
-
+            
         </div>
         <!-- /.row -->
 

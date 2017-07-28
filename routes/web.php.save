@@ -86,7 +86,6 @@ Route::group(["middleware" => ["auth","doktor_mu","koordinasyon"]],function(){
     Route::get('Sevkler/','PatientsController@index');
     Route::resource('Cevaplar','CevapController');
     Route::resource('Ara/','SearchController');
-    Route::get('Yaz/{id}','PatientsController@pdfyaz');
 });
 
 Route::group(["middleware" => ["auth","koordinasyon"]],function(){
@@ -106,17 +105,12 @@ Route::group(["middleware" => ["auth","koordinasyon"]],function(){
     Route::get('Sevkler/','PatientsController@index');
     Route::resource('Ara/','SearchController');
     Route::resource('Cevaplar','CevapController');
-    Route::get('Yaz/{id}','PatientsController@pdfyaz');
-    Route::resource('Hastalar','PatientsController');
-    Route::get('Askom/','PatientsController@askom');
 });
 
-Route::get('mail', function () {
-    Mail::send('emails.new_contractor',  [ ],  function($message){
-        $message->to('gkykrkc@gmail.com')->subject('Test Email');
-    });
-});
-
+Mail::raw("Testing", function ($message) {
+            $message->to('me@gmail.com', 'Jim')
+              ->subject('LaravelGMail App!');
+        });
 
 
 

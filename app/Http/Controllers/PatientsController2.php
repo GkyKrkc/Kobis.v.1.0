@@ -10,7 +10,8 @@ use App\Patient;
 use App\Resim;
 use App\time;
 use App\Upload;
-use Barryvdh\DomPDF\Facade as PDF;
+use PDF;
+
 use Carbon\Carbon;
 use Ramsey\Uuid\Converter\TimeConverterInterface;
 use Illuminate\Http\File;
@@ -369,7 +370,7 @@ class PatientsController extends Controller
     public function pdfyaz($id){
         $hasta=Patient::find($id);
         $user=Auth::user()->id;
-        $akislar=Time::where('patient_id',$id)->orderBy('time', 'asc')->get();
+        $akislar=Time::where('patient_id',$id)->orderBy('time', 'dsc')->get();
         $dt = Carbon::now();
 
         $time=$dt->toTimeString();
@@ -378,6 +379,8 @@ class PatientsController extends Controller
         $hastaneler=hospital::where('durum','=','1')->get();
         $cevaplar=Cevaplar::all();
         $sonuclar=hasta_hastane_cevap::where('hasta_id',$id)->get();
+
+        PDF::setOptions(['dpi' => 150, 'defaultFont' => 'Tahoma']);
 
         $pdf = PDF::loadView('pdf.invoice',
             [
@@ -389,6 +392,8 @@ class PatientsController extends Controller
                 'sonuclar'=>$sonuclar,
             ]
         );
+
+
         return $pdf->download($hasta->hasta_adi.'.pdf');
     }
 

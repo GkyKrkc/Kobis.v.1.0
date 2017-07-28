@@ -9,17 +9,17 @@
 
                     <a href="{{route('Hastalar.edit',$hasta->id)}}" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-edit" aria-hidden="true"></span></a>
                     <a href="{{url('Yaz/'.$hasta->id)}}" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-print" aria-hidden="true"></span></a>
-                    <a href="{{url('Yaz/'.$hasta->id)}}" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span></a>
+                    <a href="#" class="btn btn-default"><span class="glyphicon glyphicon glyphicon-time" aria-hidden="true"></span></a>
                     <hr>
                     <ul class="list-group hastabilgi panel panel-success" >
-                        <li class="list-group-item" style="border: none;"><strong>Hasta Adı:</strong></strong>{{$hasta->hasta_adi}}</li>
+                        <li class="list-group-item text-capitalize" style="border: none;"><strong>Hasta Adı:</strong></strong>{{$hasta->hasta_adi}}</li>
                         <li class="list-group-item" style="border: none;"><strong>Mernis No:</strong></strong>{{$hasta->mernis_no}}</li>
                         <li class="list-group-item" style="border: none;"><strong>Yaş:</strong></strong>{{$hasta->yas}}</li>
-                        @if($hasta->kategori=1)
+                        @if($hasta->kategori==1)
                         <li class="list-group-item" style="border: none;"><strong>Kategori:</strong></strong>Yenidoğan</li>
-                        @elseif($hasta->kategori=2)
+                        @elseif($hasta->kategori==2)
                         <li class="list-group-item" style="border: none;"><strong>Kategori:</strong></strong>Pediatrik</li>
-                        @elseif($hasta->kategori=2)
+                        @elseif($hasta->kategori==3)
                         <li class="list-group-item" style="border: none;"><strong>Kategori:</strong></strong>Erişkin</li>
                         @endif
                         <li class="list-group-item" style="border: none;"><strong>{{$hasta->basamak}}.Basamak Yoğun Bakım İhtiyacı</strong></strong></li>

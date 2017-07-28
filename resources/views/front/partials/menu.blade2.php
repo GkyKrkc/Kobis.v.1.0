@@ -63,6 +63,11 @@
 
 
 
+                            <li><a href="blog-post.html"><i class="fa fa-user-md" aria-hidden="true"></i> Adli Tabip Nöbet Listesi</a></li>
+                            <li><a href="blog-post.html"><i class="fa fa-map-marker" aria-hidden="true"></i> Ekip Ve Bölgeler</a></li>
+                            <li><a href="blog-post.html"><i class="fa fa-file-text" aria-hidden="true"></i> Form ve Dökümanlar</a></li>
+
+
 
                                 <li>
                                     <a href="{{ route('logout') }}"
